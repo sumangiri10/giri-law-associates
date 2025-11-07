@@ -1,0 +1,326 @@
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+/* Hero Carousel Styles */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.slide-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.slide-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 10;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.dot.active {
+  background: white;
+  width: 32px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.welcome-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8b4513;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background: #8b4513;
+  margin: 0 auto 2rem;
+}
+
+.welcome-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Why Choose Us Section */
+.why-section {
+  padding: 5rem 2rem;
+  background: #f9fafb;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Practice Areas Section */
+.practice-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.practice-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.practice-card {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.practice-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.practice-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.practice-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.practice-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.practice-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+/* Nepal Law Acts Section */
+.acts-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.acts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs-container {
+  margin-top: 3rem;
+}
+
+.tabs-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8b4513;
+  background: white;
+  border: 2px solid #8b4513;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.tab-button:hover {
+  background: #f5f5dc;
+}
+
+.tab-button.active {
+  background: #8b4513;
+  color: white;
+}
+
+.tab-content {
+  background: #f9fafb;
+  padding: 3rem;
+  border-radius: 8px;
+  min-height: 250px;
+}
+
+.act-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin-bottom: 1.5rem;
+}
+
+.act-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
