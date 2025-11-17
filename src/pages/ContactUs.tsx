@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/pages.css";
 
-<<<<<<< HEAD
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -201,15 +200,6 @@ export default function ContactPage() {
           </p>
         </div>
       </div>
-=======
-export default function ContactUs() {
-  return (
-    <div style={{ padding: "40px", textAlign: "center" }}>
-      <h1>Contact Us</h1>
-      <p>
-        Welcome to Giri Law Associates - Contact Us page content coming soon.
-      </p>
->>>>>>> 8c66707d9ceaddd25a10a8fd9102889caa202e47
     </div>
   );
 }

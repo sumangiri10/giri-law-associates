@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/pages.css";
 
-<<<<<<< HEAD
 const practiceAreas = [
   {
     id: 1,
@@ -193,15 +192,6 @@ export default function PracticeAreaPage() {
           ))}
         </div>
       </div>
-=======
-export default function PracticeArea() {
-  return (
-    <div style={{ padding: "40px", textAlign: "center" }}>
-      <h1>Practice Area</h1>
-      <p>
-        Welcome to Giri Law Associates - Practice Area page content coming soon.
-      </p>
->>>>>>> 8c66707d9ceaddd25a10a8fd9102889caa202e47
     </div>
   );
 }
