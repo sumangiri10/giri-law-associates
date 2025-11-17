@@ -1,51 +1,58 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import girilogo from "../assets/girilogo.png";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <a href="/" className="header-logo-link">
+        <Link to="/" className="header-logo-link">
           <img src={girilogo} alt="Giri Law Firm" className="header-logo" />
-        </a>
+        </Link>
+
         <nav className="header-nav">
           <ul>
             <li>
-              <a href="#" className="active">
+              <Link to="/" className="active">
                 Home
-              </a>
+              </Link>
             </li>
+
             <li className="dropdown">
-              <a href="#">
+              <Link to="/about">
                 About Us <span className="dropdown-arrow">&#9662;</span>
-              </a>
+              </Link>
               <div className="dropdown-menu">
-                <a href="#">Our Firm</a>
-                <a href="#">Our Team</a>
-                <a href="#">Join Us</a>
+                <Link to="/our-firm">Our Firm</Link>
+                <Link to="/team">Our Team</Link>
+                <Link to="/join">Join Us</Link>
               </div>
             </li>
+
             <li className="dropdown">
-              <a href="#">
+              <Link to="/practice-area">
                 Practice Area <span className="dropdown-arrow">&#9662;</span>
-              </a>
+              </Link>
               <div className="dropdown-menu">
-                <a href="#">Banking & Finance</a>
-                <a href="#">Corporate & Commercial</a>
-                <a href="#">Litigation & Arbitration</a>
-                <a href="#">Mergers & Acquisitions</a>
-                <a href="#">Intellectual Property</a>
+                <Link to="/banking-finance">Banking & Finance</Link>
+                <Link to="/corporate-commercial">Corporate & Commercial</Link>
+                <Link to="/litigation-arbitration">
+                  Litigation & Arbitration
+                </Link>
+                <Link to="/mergers-acquisitions">Mergers & Acquisitions</Link>
+                <Link to="/intellectual-property">Intellectual Property</Link>
               </div>
             </li>
+
             <li>
-              <a href="#">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#">News & Publication</a>
+              <Link to="/news-publication">News & Publication</Link>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </nav>
