@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/pages.css";
 
+<<<<<<< HEAD
 export default function PropertyPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -165,6 +166,16 @@ export default function PropertyPage() {
           </ul>
         </div>
       </div>
+=======
+export default function IntellectualProperty() {
+  return (
+    <div style={{ padding: "40px", textAlign: "center" }}>
+      <h1>Intellectual Property</h1>
+      <p>
+        Welcome to Giri Law Associates - Intellectual Property page content
+        coming soon.
+      </p>
+>>>>>>> 8c66707d9ceaddd25a10a8fd9102889caa202e47
     </div>
   );
 }
