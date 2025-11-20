@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import FloatingContact from "../components/FloatingContact";
 import { Outlet } from "react-router-dom";
 
 const Layout: React.FC = () => {
@@ -11,6 +12,7 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       <Footer />
+      <FloatingContact />
     </>
   );
 };

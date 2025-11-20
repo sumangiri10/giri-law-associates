@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 import girilogo from "../assets/girilogo.png";
 
@@ -7,52 +7,84 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="header-logo-link">
+        <NavLink to="/" className="header-logo-link">
           <img src={girilogo} alt="Giri Law Firm" className="header-logo" />
-        </Link>
+        </NavLink>
 
         <nav className="header-nav">
           <ul>
             <li>
-              <Link to="/" className="active">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
 
             <li className="dropdown">
-              <Link to="/about">
-                About Us <span className="dropdown-arrow">&#9662;</span>
-              </Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                About Us <span className="dropdown-arrow">▼</span>
+              </NavLink>
               <div className="dropdown-menu">
-                <Link to="/our-firm">Our Firm</Link>
-                <Link to="/team">Our Team</Link>
-                <Link to="/join">Join Us</Link>
+                <NavLink to="/our-firm">Our Firm</NavLink>
+                <NavLink to="/team">Our Team</NavLink>
+                <NavLink to="/join">Join Us</NavLink>
               </div>
             </li>
 
             <li className="dropdown">
-              <Link to="/practice-area">
-                Practice Area <span className="dropdown-arrow">&#9662;</span>
-              </Link>
+              <NavLink
+                to="/practice-area"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Practice Area <span className="dropdown-arrow">▼</span>
+              </NavLink>
               <div className="dropdown-menu">
-                <Link to="/banking-finance">Banking & Finance</Link>
-                <Link to="/corporate-commercial">Corporate & Commercial</Link>
-                <Link to="/litigation-arbitration">
+                <NavLink to="/banking-finance">Banking & Finance</NavLink>
+                <NavLink to="/corporate-commercial">
+                  Corporate & Commercial
+                </NavLink>
+                <NavLink to="/litigation-arbitration">
                   Litigation & Arbitration
-                </Link>
-                <Link to="/mergers-acquisitions">Mergers & Acquisitions</Link>
-                <Link to="/intellectual-property">Intellectual Property</Link>
+                </NavLink>
+                <NavLink to="/mergers-acquisitions">
+                  Mergers & Acquisitions
+                </NavLink>
+                <NavLink to="/intellectual-property">
+                  Intellectual Property
+                </NavLink>
               </div>
             </li>
 
             <li>
-              <Link to="/services">Services</Link>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Services
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/news-publication">News & Publication</Link>
+              <NavLink
+                to="/news-publication"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                News & Publication
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </nav>
