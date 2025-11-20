@@ -33,36 +33,12 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Information Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "3rem",
-            marginBottom: "4rem",
-          }}
-        >
+        <div className="contact-info-grid">
           {/* Office Address */}
-          <div
-            style={{
-              padding: "2.5rem 2rem",
-              border: "2px solid #D4AF37",
-              borderRadius: "8px",
-              textAlign: "center",
-              backgroundColor: "#FEFEFE",
-            }}
-          >
-            <div style={{ fontSize: "3.5rem", marginBottom: "1.5rem" }}>📍</div>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "700",
-                color: "#8B4513",
-                marginBottom: "1rem",
-              }}
-            >
-              Office Address
-            </h3>
-            <p style={{ color: "#666", lineHeight: "1.8", fontSize: "1rem" }}>
+          <div className="contact-info-box">
+            <div className="contact-info-icon">📍</div>
+            <h3>Office Address</h3>
+            <p>
               Kathmandu, Nepal
               <br />
               Putalisadak
@@ -72,57 +48,23 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Info */}
-          <div
-            style={{
-              padding: "2.5rem 2rem",
-              border: "2px solid #D4AF37",
-              borderRadius: "8px",
-              textAlign: "center",
-              backgroundColor: "#FEFEFE",
-            }}
-          >
-            <div style={{ fontSize: "3.5rem", marginBottom: "1.5rem" }}>📞</div>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "700",
-                color: "#8B4513",
-                marginBottom: "1rem",
-              }}
-            >
-              Contact Details
-            </h3>
-            <p style={{ color: "#666", lineHeight: "1.8", fontSize: "1rem" }}>
+          <div className="contact-info-box">
+            <div className="contact-info-icon">📞</div>
+            <h3>Contact Details</h3>
+            <p>
               Phone: +977 9869489751
               <br />
               Mobile: +977 9864244422
               <br />
-              Email: - girilawfirm@gmail.com
+              Email: girilawfirm@gmail.com
             </p>
           </div>
 
           {/* Office Hours */}
-          <div
-            style={{
-              padding: "2.5rem 2rem",
-              border: "2px solid #D4AF37",
-              borderRadius: "8px",
-              textAlign: "center",
-              backgroundColor: "#FEFEFE",
-            }}
-          >
-            <div style={{ fontSize: "3.5rem", marginBottom: "1.5rem" }}>🕒</div>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "700",
-                color: "#8B4513",
-                marginBottom: "1rem",
-              }}
-            >
-              Office Hours
-            </h3>
-            <p style={{ color: "#666", lineHeight: "1.8", fontSize: "1rem" }}>
+          <div className="contact-info-box">
+            <div className="contact-info-icon">🕒</div>
+            <h3>Office Hours</h3>
+            <p>
               Sunday - Friday
               <br />
               10:00 AM - 5:00 PM

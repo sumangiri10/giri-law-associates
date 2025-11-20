@@ -1,0 +1,56 @@
+.floating-contact {
+  position: fixed;
+  top: 130px;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(0);
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  background: #244570;
+  color: white;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 30px 0 0 30px;
+  box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  width: 30px;
+}
+
+.floating-btn:hover {
+  width: 200px;
+  padding-right: 24px;
+  background: #1e3d59;
+}
+
+.floating-btn .icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.floating-btn .label {
+  margin-left: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.floating-btn:hover .label {
+  opacity: 1;
+}
+
+.phone .icon {
+  color: #ff6b6b;
+}
+.email .icon {
+  color: #4ecdc4;
+}
